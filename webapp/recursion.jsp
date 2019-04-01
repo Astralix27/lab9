@@ -13,8 +13,8 @@
      * This lab tests your ability to implement recursion for several functions.
      * 
      * @authors: Stephen, Mukhtar, MoSho
-     * @editer: YOUR_NAME_HERE
-     * @version DATE_HERE
+     * @editer: Kennen Reyes
+     * @version: 4/1/2019
      */
 
     /** **********************************************************************
@@ -173,9 +173,14 @@
         if (height == 1) 
         {
     	    //TODO
+            return 1;
         }
         
     	//TODO
+        else
+        {
+         return (int)Math.pow(branchingFactor, height - 1) + nnaryTreeSize(branchingFactor, height - 1);
+        }
     }
 
     /** **********************************************************************
@@ -189,6 +194,7 @@
     public int treeSum(Tree tree)
     {
     	//TODO
+        return 0;
     }
     
     /** **********************************************************************
