@@ -34,6 +34,12 @@
          * This lets our recursion know when to stop.
          */
         //TODO
+        int total;
+
+        if (value <= 1)
+        {
+         total = 1;
+        }
 
 
         /*
@@ -45,6 +51,12 @@
          * By doing this, we break up the equation n! into n! = n * (n-1)!.
          */
         //TODO
+        else
+        {
+         total = value * factorial(value - 1);
+        }
+
+        return total;
 
     }
 
