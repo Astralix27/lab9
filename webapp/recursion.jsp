@@ -194,7 +194,14 @@
     public int treeSum(Tree tree)
     {
     	//TODO
-        return 0;
+	int total = tree.getValue();
+
+	for (Tree child  : tree.getChildren()) 
+        {
+	 total += treeSum(child);
+	}
+
+	return total;
     }
     
     /** **********************************************************************
